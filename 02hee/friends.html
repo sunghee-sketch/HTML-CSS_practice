@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - KoKoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fa-solid fa-battery-empty fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
+        <span><i class="fa-solid fa-music fa-xl"></i></span>
+        <span><i class="fa-solid fa-gear fa-xl"></i></span>
+      </div>
+    </header>
+
+    <a id="friends-display-link"
+      ><i class="fa-solid fa-circle-info"></i>Friends Names Display<i
+        class="fa-solid fa-chevron-right fa-xs"
+      ></i
+    ></a>
+
+    <main class="friends-screen">
+      <div class="user-component"></div>
+      <div class="friends-screen__channel">
+        <div class="friends-scree__channel-header">
+          <span>Channel</span>
+          <i class="fa-solid fa-chevron-up fa-xs"></i>
+        </div>
+      </div>
+    </main>
+
+    <div class="user-component">
+      <div class="user-component__column">
+        <img
+          src="https://img.hankyung.com/photo/202403/01.36047379.1.jpg"
+          class="user-component__avatar user-component__avatar--xl"
+        />
+        <div class="user-component__text">
+          <h4 class="user-component__title">Nicolas</h4>
+          <!--<h6 class="user-component__subtitle">Hello</h6> -->
+        </div>
+      </div>
+      <div class="user-component__column"></div>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link"></a> <i class="fa-solid fa-user fa-2x"></i>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link">
+            <span class="nav__notification">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link"><i class="fa-solid fa-ellipsis fa-2x"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/69931e92d2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
