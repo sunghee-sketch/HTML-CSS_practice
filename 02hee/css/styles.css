@@ -1,26 +1,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+@import "variables.css";
+
 body {
   font-family: "Merriweather", serif;
 }
-.status-bar {
+
+.Welcome-header {
+  margin: 100px 0;
+  font-size: 35px;
+  text-align: center;
   display: flex;
-  justify-content: center;
-}
-.status-bar__column {
-  width: 33%;
+  flex-direction: column;
   align-items: center;
 }
-.status-bar__column:nth-child(2) {
+
+.Welcome-header__title {
+  margin-bottom: 30px;
+}
+.Welcome-header__text {
+  opacity: 0.6;
+  font-size: 20px;
+  width: 60%;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+#login-form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin: 0 30px;
 }
-.status-bar__column:nth-child(3) {
-  display: flex;
-  justify-content: flex-end;
+
+#login-form input {
+  border: none;
+  padding: 20px 0;
+  font-size: 23px;
+  margin-bottom: 5px;
 }
-.status-bar__column:nth-child(1) span {
-  margin-right: 5px;
+
+#login-form input:nth-child(2) {
+  margin-bottom: 40px;
 }
-.status-bar__column .fa-battery-empty {
-  margin: 2px;
+
+#login-form input[type="submit"] {
+  margin-bottom: 15px;
+}
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#login-form input[type="submit"]:focus {
+  background-color: rgba(0, 0, 0, 0.2);
 }
